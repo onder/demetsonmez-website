@@ -37,10 +37,10 @@
         </div>
       </div>
       <nav>
-        <a href="#kolye">Kolye</a>
-        <a href="#bileklik">Bileklik</a>
-        <a href="#kupe">Küpe</a>
-        <a href="#yuzuk">Yüzük</a>
+        <a href="https://www.shopier.com/demetsonmez#Kolye" target="_blank">Kolye</a>
+        <a href="https://www.shopier.com/demetsonmez#Bileklik" target="_blank">Bileklik</a>
+        <a href="https://www.shopier.com/demetsonmez#K%C3%BCpe" target="_blank">Küpe</a>
+        <a href="https://www.shopier.com/demetsonmez#Y%C3%BCz%C3%BCk" target="_blank">Yüzük</a>
       </nav>
     </div>
   </header>
@@ -63,26 +63,34 @@
   <!-- Swiper Slider Section End -->
 
   <section class="products">
-    <div class="product-category" id="kolye">
-      <h2>Kolye</h2>
-      <div class="placeholder-img"><img src="./img/original/demetsonmez_2e5ae1e28a239cfadac33fb85132c90f.jpeg" alt="Bileklik"></div>
-      <p>Tarzınızı tamamlayan ve fark yaratan benzersiz kolyeleri keşfedin.</p>
-    </div>
-    <div class="product-category" id="bileklik">
-      <h2>Bileklik</h2>
-      <div class="placeholder-img"><img src="./img/original/demetsonmez_cd973b58aaace3a1abef2dc4e5e6dec6.jpeg" alt="Bileklik"></div>
-      <p>Özenle ve detaylara dikkat edilerek tasarlanmış güzel bilekliklerimizle bileğinizi süsleyin.</p>
-    </div>
-    <div class="product-category" id="kupe">
-      <h2>Küpe</h2>
-      <div class="placeholder-img"><img src="./img/original/demetsonmez_e81786443258ec15a566b92b71f04b8d.jpeg" alt="Küpe"></div>
-      <p>Zarif toplardan cesur tasarımlara kadar her duruma uygun küpeler arasından mükemmel çifti bulun.</p>
-    </div>
-    <div class="product-category" id="yuzuk">
-      <h2>Yüzük</h2>
-      <div class="placeholder-img"><img src="./img/original/demetsonmez_f44447f8f041aa55a322c70865541123.jpeg" alt="Yüzük"></div>
-      <p>Zarafeti her görünüme taşıyan, özenle tasarlanmış şık yüzük koleksiyonumuzu keşfedin.</p>
-    </div>
+    <a href="https://www.shopier.com/demetsonmez#Kolye" target="_blank" class="product-link">
+      <div class="product-category" id="kolye">
+        <h2>Kolye</h2>
+        <div class="placeholder-img"><img src="./img/original/demetsonmez_2e5ae1e28a239cfadac33fb85132c90f.jpeg" alt="Bileklik"></div>
+        <p>Tarzınızı tamamlayan ve fark yaratan benzersiz kolyeleri keşfedin.</p>
+      </div>
+    </a>
+    <a href="https://www.shopier.com/demetsonmez#Bileklik" target="_blank" class="product-link">
+      <div class="product-category" id="bileklik">
+        <h2>Bileklik</h2>
+        <div class="placeholder-img"><img src="./img/original/demetsonmez_cd973b58aaace3a1abef2dc4e5e6dec6.jpeg" alt="Bileklik"></div>
+        <p>Özenle ve detaylara dikkat edilerek tasarlanmış güzel bilekliklerimizle bileğinizi süsleyin.</p>
+      </div>
+    </a>
+    <a href="https://www.shopier.com/demetsonmez#K%C3%BCpe" target="_blank" class="product-link">
+      <div class="product-category" id="kupe">
+        <h2>Küpe</h2>
+        <div class="placeholder-img"><img src="./img/original/demetsonmez_e81786443258ec15a566b92b71f04b8d.jpeg" alt="Küpe"></div>
+        <p>Zarif toplardan cesur tasarımlara kadar her duruma uygun küpeler arasından mükemmel çifti bulun.</p>
+      </div>
+    </a>
+    <a href="https://www.shopier.com/demetsonmez#Y%C3%BCz%C3%BCk" target="_blank" class="product-link">
+      <div class="product-category" id="yuzuk">
+        <h2>Yüzük</h2>
+        <div class="placeholder-img"><img src="./img/original/demetsonmez_f44447f8f041aa55a322c70865541123.jpeg" alt="Yüzük"></div>
+        <p>Zarafeti her görünüme taşıyan, özenle tasarlanmış şık yüzük koleksiyonumuzu keşfedin.</p>
+      </div>
+    </a>
   </section>
 
   <div class="links">
@@ -101,3 +109,18 @@
   </footer>
 </body>
 </html>
+
+/* CSS: Kutuların tıklanabilir görünmesi için */
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.product-link .product-category {
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+.product-link .product-category:hover {
+  box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+  transform: translateY(-2px) scale(1.02);
+}
